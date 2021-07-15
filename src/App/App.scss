@@ -1,0 +1,21 @@
+.half-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .switcher{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.no-results{
+   display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
