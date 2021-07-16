@@ -1,11 +1,10 @@
-import { Typography } from '@material-ui/core'
-import { ArrowDropDownRounded, ArrowDropUpRounded } from '@material-ui/icons'
 import React from 'react'
 import './Crypto.scss'
+import { Typography } from '@material-ui/core'
+import { ArrowDropDownRounded, ArrowDropUpRounded } from '@material-ui/icons'
 
 
 const Crypto = ({darkMode, name, image,current_price, market_cap,volume, price_change, rank, currency, high, high_timestamp, id}) => {
-
 
     return (
         <div key={id} className={darkMode ? 'list dark' : 'list'}>
@@ -73,9 +72,6 @@ const Crypto = ({darkMode, name, image,current_price, market_cap,volume, price_c
                 </span>
             </div>
           
-
-              
-           
             <div className='box cap'>
                 <p>market cap</p>
                 <span>

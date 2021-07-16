@@ -1,10 +1,10 @@
 import './App.scss';
 import React ,{useState, useEffect} from 'react'
+import Header from '../components/Header'
 import Crypto from '../components/Crypto'
 import { Switch, Paper, Grid, Typography } from '@material-ui/core';
 import {createTheme} from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles';
-import Header from '../components/Header'
 import { purple} from '@material-ui/core/colors';
 import { ErrorRounded } from '@material-ui/icons';
 
@@ -46,7 +46,7 @@ function App() {
   }
 
 
-const darkGrey='#202124';
+  const darkGrey='#202124';
   const theme = createTheme({
     palette:{
       type:  darkMode? 'dark' : 'light',
