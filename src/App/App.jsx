@@ -61,7 +61,6 @@ const darkGrey='#202124';
     }
   })
 
-  console.log(filtered.length);
 
   return (
     <ThemeProvider theme={theme}>
@@ -71,7 +70,7 @@ const darkGrey='#202124';
           <Header darkMode={darkMode} data={data} handleChange={(e)=>setSearch(e.target.value)}/>
         </Grid>
         <Grid item container>
-          <Grid item xs={0} sm={2}/>
+          <Grid item xs={false} sm={2}/>
           <Grid item xs={12} sm={8}>
             <div className='half-content'>
               <div className='switcher'>   
@@ -99,6 +98,7 @@ const darkGrey='#202124';
         image={e.logo_url} 
         current_price={e.price} 
          name={e.name} 
+         id={e.id}
          key={e.id}
         price_change={e.['1d'].volume_change_pct} 
         market_cap={e.market_cap}
@@ -111,7 +111,7 @@ const darkGrey='#202124';
   
     
     </Grid>
-    <Grid item xs={0} sm={2}/>
+    <Grid item xs={false} sm={2}/>
     </Grid>
     </Grid>
     </Paper>

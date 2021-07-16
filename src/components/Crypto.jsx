@@ -4,11 +4,11 @@ import React from 'react'
 import './Crypto.scss'
 
 
-const Crypto = ({darkMode, name, image,current_price, market_cap,volume, price_change, rank, currency, high, high_timestamp, key}) => {
+const Crypto = ({darkMode, name, image,current_price, market_cap,volume, price_change, rank, currency, high, high_timestamp, id}) => {
 
 
     return (
-        <div id={key} className={darkMode ? 'list dark' : 'list'}>
+        <div key={id} className={darkMode ? 'list dark' : 'list'}>
             
             <div className='box rank'  >
                 <p>rank</p>
@@ -23,7 +23,7 @@ const Crypto = ({darkMode, name, image,current_price, market_cap,volume, price_c
 
             <div className="box name">
                 <p>name</p>
-                <Typography align='left' variant={'h6'} color={darkMode? 'secondary':''}>
+                <Typography align='left' variant={'h6'} color={darkMode? 'secondary':'inherit'}>
                     {name}
                  </Typography>
             </div>

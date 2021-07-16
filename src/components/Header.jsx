@@ -19,7 +19,7 @@ const Header = ({darkMode, handleChange}) => {
 
 
     return (
-            <AppBar position='static' color={darkMode? 'primary' : '#ccc'} >
+            <AppBar position='static' color={darkMode? 'primary' : 'transparent'} >
              <Toolbar style={{justifyContent:'space-around'}} >
                 <div style={{display:'flex'}}>
             <BarChartRoundedIcon fontSize='large' color={darkMode? 'secondary' : 'primary'}/>
